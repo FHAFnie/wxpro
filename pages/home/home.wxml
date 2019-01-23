@@ -7,7 +7,7 @@
 
 
 
-<!--   
+<!--
   <view class='searchView'>
     <icon type='search' size='40rpx' bindtap='search'></icon>
     <input placeholder="搜索商品" auto-focus wx:/>
@@ -27,7 +27,7 @@
   </view>
   <view class='imgView'>
     <image src='https://res.yslbeautycn.com/resources/activityReleased/07ecd57c-c6bd-4517-a657-778281766ac3/images/pc_01.jpg?20190116194157'></image>
-   
+
   </view>
   <view class='typeView'>
     <view class='topType'>
@@ -35,13 +35,32 @@
         <image src='http://120.77.206.87/images/new.png'></image>
         <text>新品</text>
       </navigator>
-      <navigator url='../goods/goods?activeId=1'  bindtap='test' data-activeid="{{1}}">
-        <image src='http://120.77.206.87/images/dior.png'></image>
-        <text>迪奥</text>
-      </navigator>
-      <navigator url='../goods/goods?activeId=2'  bindtap='test' data-activeid="{{2}}">
+      <navigator url='../goods/goods?activeId=2'  bindtap='test' data-activeid="{{1}}">
         <image src='http://120.77.206.87/images/ysl.png'></image>
         <text>圣罗兰</text>
+      </navigator>
+
+      <navigator url='../goods/goods?activeId=1'  bindtap='test' data-activeid="{{2}}">
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548216030531&di=97281defa3489f330939ba63ff7ca060&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201404%2F11%2F20140411113308_idmHK.jpeg'></image>
+        <text>阿玛尼</text>
+      </navigator>
+    </view>
+    <view class='botType'>
+       <navigator url='../goods/goods?activeId=1'  bindtap='test' data-activeid="{{3}}">
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548216703685&di=09880d54b3856aba15f8f074d242efec&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20170209%2F5dbadaeb74734949bae0691c48ea5ff9_th.jpg'></image>
+        <text>迪奥</text>
+      </navigator>
+         <navigator url='../goods/goods?activeId=1'  bindtap='test' data-activeid="{{4}}">
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548216730280&di=bbd8a4ba6ea00561efa5d3973d7060d3&imgtype=0&src=http%3A%2F%2Fimg8.ph.126.net%2FE4rXqyIYJ5k4qIFSrtTSLw%3D%3D%2F6597672299029169408.jpg'></image>
+        <text>香奈儿</text>
+      </navigator>
+         <navigator url='../goods/goods?activeId=1'  bindtap='test' data-activeid="{{5}}">
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548216812029&di=9daf75fb6df14bf1a1bcb0edcad36f24&imgtype=0&src=http%3A%2F%2Fa1.att.hudong.com%2F87%2F94%2F01100000000000144724940961928_s.jpg'></image>
+        <text>兰蔻</text>
+      </navigator>
+         <navigator url='../goods/goods?activeId=1'  bindtap='test' data-activeid="{{6}}">
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548216861886&di=5b3f83f3c74fc95785fd057c025f49c9&imgtype=0&src=http%3A%2F%2Ff1.chofn.net%2Ftmimg%2Fico%2F11341745-22%2Fab7df252d137ba4e.jpg'></image>
+        <text>纪梵希</text>
       </navigator>
     </view>
     <view>
