@@ -93,6 +93,20 @@ Page({
     })
   },
   addcar(){
+    var username = wx.getStorageSync("username");
+    if (!username) {
+      wx.showToast({
+        title: "您还未登录，请前往登陆页面",
+        icon: 'none',
+        duration: 1500,
+        mask: true
+      })
+      setTimeout(function () {
+        wx.switchTab({
+          url: '../newMy/newMy',
+        })
+      }, 2000)
+    } else {
     wx.request({
       url: 'http://47.96.178.137:3200/vue/addToCar',
       data: {
@@ -115,9 +129,24 @@ Page({
         }
       }
     })
+    }
   },
   goCar(){
     var that=this
+    var username = wx.getStorageSync("username");
+    if (!username) {
+      wx.showToast({
+        title: "您还未登录，请前往登陆页面",
+        icon: 'none',
+        duration: 1500,
+        mask: true
+      })
+      setTimeout(function () {
+        wx.switchTab({
+          url: '../newMy/newMy',
+        })
+      }, 2000)
+    } else {
     wx.request({
       url: 'http://47.96.178.137:3200/vue/addToCar',
       data: {
@@ -137,6 +166,6 @@ Page({
       }
     })
   }
-
+  }
 
 })

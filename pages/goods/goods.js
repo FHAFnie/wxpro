@@ -55,13 +55,6 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function() {
-    wx.requestPayment({
-      timeStamp: '',
-      nonceStr: '',
-      package: '',
-      signType: '',
-      paySign: '',
-    })
     var that = this;
     wx.request({
       url: 'http://47.96.178.137:3200/users/getgoodstype',
