@@ -14,6 +14,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // 你什么都不懂
     var username=wx.getStorageSync("username");
     if(!username){
       wx.showToast({
@@ -53,7 +54,7 @@ Page({
         }
       })
     }
-    
+
   },
 
   /**
