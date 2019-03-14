@@ -12,6 +12,7 @@ Page({
     show: false
   },
   changeActiveId(e) {
+    // 随便写点东西
     this.setData({
       activeId: e.target.dataset.index,
       current: e.target.dataset.index
@@ -31,7 +32,7 @@ Page({
     this.setData({
       activeId: options.activeId
     })
-    
+
     wx.showLoading({
       title: '加载中',
     })
